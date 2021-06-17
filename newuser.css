@@ -1,0 +1,111 @@
+button,input {
+  font-family: 'Verdana', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+.background {
+  width: 100%;
+  display:flex; 
+  color:rgb(0, 255, 221);
+}
+
+.container {
+  flex: 0 1 500px;
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+}
+
+.screen {
+  position: relative;
+  background:green;
+  border-radius: 0px;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, .25);
+}
+
+
+.screen-body {
+  display: flex;
+  background-color:lightskyblue;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.button {
+  margin-bottom: 1px;
+  text-align: right;
+  position: absolute;
+  bottom: 30px;
+  right:40px;
+}
+
+.app-form-control{
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: 1px;
+  border-bottom: 1px solid #4C4B4B;
+  color:black;
+  font-size: 14px;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color:white;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #4C4B4B;
+}
+
+.app-form-button {
+  background: white;
+  border: none;
+  margin-left: 20px;
+  color: rgb(102, 102, 102);
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.app-form-button:hover {
+  color: #262626;
+}
+
+@media screen and (max-width: 520px) {
+  *{
+    letter-spacing:1px;
+  }
+  .container{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+  }
+  .screen-body {
+    flex-direction: column;
+  }
+
+  .screen-body-item.left {
+    margin-bottom: 50px;
+  }
+  .app-form-button{
+    margin-top:5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .screen-body {
+    padding: 40px;
+  }
+
+  .screen-body-item {
+    padding: 0;
+  }
+}
